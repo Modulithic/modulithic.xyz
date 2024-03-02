@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex; /* Added to center the child elements */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the children horizontally */
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.upload-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjusted from space-between to center */
+    gap: 20px;
+    width: 100%; /* Ensure it takes the full width of its container */
+}
+
+.upload-option {
+    width: calc(50% - 10px); /* No change, but you might adjust this for better centering */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.upload-option h2 {
+    margin-top: 0;
+}
+
+.metis-testnet { background-color: #f0f8ff; }
+.metis-mainnet { background-color: #e6ffe6; }
+.moonbeam-testnet { background-color: #fff0f5; }
+.linea-testnet { background-color: #ffffe0; }
+
+@media (max-width: 600px) {
+    .upload-option {
+        width: 100%;
+    }
+}
